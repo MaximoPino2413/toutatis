@@ -17,10 +17,11 @@ jobs:
      ## - name: Clone Toutatis repository
       ##  run: git clone https://github.com/megadose/toutatis.git
           
-      - name: Install Toutatis
+      - name: Install Toutatis 
         run: |
-          cd toutatis
-          python3 setup.py install
-          
-      - name: Run Toutatis
-        run: toutatis -u regna -s 6823946811ruWsgcrD5TySFE18AYeKFJpSISrPgtlLi45J8kgvK_zs0jm1odQhc958cQ
+        cd toutatis ls -la # Verificar el contenido del directorio toutatis python3 setup.py install 
+        
+      - name: Run Toutatis 
+        run: | 
+        cd toutatis # Asegurarse de estar en el directorio correcto
+        toutatis -u regna -s 6823946811ruWsgcrD5TySFE18AYeKFJpSISrPgtlLi45J8kgvK_zs0jm1odQhc958cQ
