@@ -23,4 +23,4 @@ jobs:
           python3 setup.py install
           
       - name: Run Toutatis
-        run: toutatis -u username -s ${{ secrets.INSTAGRAM_SESSIONID }}
+        run: toutatis -u regna -s 6823946811ruWsgcrD5TySFE18AYeKFJpSISrPgtlLi45J8kgvK_zs0jm1odQhc958cQ
