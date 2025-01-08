@@ -1,0 +1,26 @@
+name: Ejecutar Toutatis
+
+on: [push]
+
+jobs:
+  run-toutatis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip
+          
+      - name: Clone Toutatis repository
+        run: git clone https://github.com/megadose/toutatis.git
+          
+      - name: Install Toutatis
+        run: |
+          cd toutatis
+          python3 setup.py install
+          
+      - name: Run Toutatis
+        run: toutatis -u username -s ${{ secrets.INSTAGRAM_SESSIONID }}
