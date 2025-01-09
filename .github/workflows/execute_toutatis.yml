@@ -22,7 +22,7 @@ jobs:
           ## ls -la # Donde estamos antes de entrar en carpeta toutatis
           ## cd toutatis
           ls -la # Verificar el contenido del directorio toutatis
-          python3 setup.py install 
+          pip install toutatis 
         
       - name: Run Toutatis 
         run: | 
