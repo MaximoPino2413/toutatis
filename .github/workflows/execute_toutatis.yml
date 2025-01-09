@@ -19,8 +19,8 @@ jobs:
           
       - name: Install Toutatis 
         run: | 
-          ls -la # Donde estamos antes de entrar en carpeta toutatis
-          cd toutatis
+          ## ls -la # Donde estamos antes de entrar en carpeta toutatis
+          ## cd toutatis
           ls -la # Verificar el contenido del directorio toutatis
           python3 setup.py install 
         
